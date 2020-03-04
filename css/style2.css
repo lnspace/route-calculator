@@ -1,0 +1,14 @@
+
+body{
+    background: #FAFAFA;  /* fallback for old browsers */
+
+}
+input{}
+
+.area-select{
+    width: 60vw;
+}
+.row{
+    width: 50vw;
+    margin-bottom: 0;
+}

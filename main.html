@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Route Calculator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles1.css">
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col">
+            <h1 class="header center orange-text">Route Calculator</h1>
+        </div>
+        <div class="progress">
+          <div id="load" class="indeterminate"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="area-1" class="input-field col s12 area-select">
+          <select id="A1">
+            <option value="" disabled selected>Choose your option</option>
+          </select>
+          <label>Area 1</label>
+        </div>
+    </div>
+    <div class="row center">
+        <div id="area-2" class="input-field col s12 area-select">
+          <select id="A2">
+            <option value="" disabled selected>Choose your option</option>
+          </select>
+          <label >Area 2</label>
+        </div>
+    </div>
+    <div class="row center">
+      <div class="input-field col s6">
+        <input placeholder="1" value="" id="M3" type="text" class="validate">
+        <label class="active" for="M3">M3</label>
+      </div>
+    </div>
+
+    <div class="row center">
+        <h5 class="header left orange-text">Standard Rate</h5>
+    </div>
+    <div class="row center">
+        <blockquote class="left"id="standard">
+
+        </blockquote>
+    </div>
+    <div class="row center">
+        <h5 class="header left orange-text">Backload Rate</h5>
+    </div>
+    <div class="row center">
+        <blockquote class="left"id="backload">
+
+        </blockquote>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('select');
+          var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>
