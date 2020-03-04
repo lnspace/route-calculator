@@ -121,7 +121,7 @@ function recurs(url,i){
         download: true,
         dynamicTyping: true,
         complete: function(results) {
-            recurs("https://raw.githubusercontent.com/lnspace/jason/master/csv/input_"+(i+1)+".csv",i+1);
+            recurs("https://raw.githubusercontent.com/lnspace/route-calculator/master/csv/input_"+(i+1)+".csv",i+1);
             console.log(results);
             // console.log(data);
             global.data = global.data.concat(results.data);
@@ -140,7 +140,7 @@ function recurs(url,i){
 
 window.onload = function(){
 
-    recurs("https://raw.githubusercontent.com/lnspace/jason/master/csv/input_1.csv",1);
+    recurs("https://raw.githubusercontent.com/lnspace/route-calculator/master/csv/input_1.csv",1);
     document.getElementById("M3").onkeyup = calculate_2;
 
 };
